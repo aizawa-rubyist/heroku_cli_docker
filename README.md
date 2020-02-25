@@ -25,3 +25,12 @@ docker-compose run --rm heroku heroku run rails c
 ```sh
 docker-compose run --rm heroku heroku run rails c -a app_name
 ```
+
+### ログ
+```sh
+docker-compose run --rm heroku heroku logs -t
+```
+もしくはアプリ名が必要な場合は以下
+```sh
+docker-compose run --rm heroku heroku logs -a app_name -t
+```
