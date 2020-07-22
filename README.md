@@ -34,3 +34,12 @@ docker-compose run --rm heroku heroku logs -t
 ```sh
 docker-compose run --rm heroku heroku logs -a app_name -t
 ```
+
+### bash
+```sh
+docker-compose run --rm heroku heroku run bash
+```
+もしくはアプリ名が必要な場合は以下
+```sh
+docker-compose run --rm heroku heroku run bash -a app_name
+```
